@@ -24,6 +24,8 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
+import Image from "next/image";
+import { JSX, SVGProps } from "react";
 
 export function Landing() {
   return (
@@ -79,7 +81,7 @@ export function Landing() {
                   </Link>
                 </div>
               </div>
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="550"
                 height="550"
@@ -104,7 +106,7 @@ export function Landing() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="550"
                 height="310"
@@ -117,7 +119,7 @@ export function Landing() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Personalized Feedback</h3>
                       <p className="text-muted-foreground">
-                        Our AI analyzes your candidates' responses and provides tailored feedback to help them improve.
+                        Our AI analyzes your candidates&apos; responses and provides tailored feedback to help them improve.
                       </p>
                     </div>
                   </li>
@@ -133,7 +135,7 @@ export function Landing() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Skill Assessments</h3>
                       <p className="text-muted-foreground">
-                        Identify your candidates' strengths and weaknesses with our comprehensive skill assessments.
+                        Identify your candidates&apos; strengths and weaknesses with our comprehensive skill assessments.
                       </p>
                     </div>
                   </li>
@@ -171,7 +173,7 @@ export function Landing() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="550"
                 height="310"
@@ -201,7 +203,7 @@ export function Landing() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Progress Tracking</h3>
                       <p className="text-muted-foreground">
-                        Monitor new hires' progress and provide timely feedback to ensure a successful onboarding
+                        Monitor new hires&apos; progress and provide timely feedback to ensure a successful onboarding
                         experience.
                       </p>
                     </div>
@@ -233,7 +235,7 @@ export function Landing() {
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Career Development</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Empower Your Employees' Career Growth
+                  Empower Your Employees&apos; Career Growth
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our AI-driven career development module helps your employees identify their strengths, set
@@ -242,7 +244,7 @@ export function Landing() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="550"
                 height="310"
@@ -255,7 +257,7 @@ export function Landing() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Skill Assessments</h3>
                       <p className="text-muted-foreground">
-                        Our AI analyzes your employees' skills and identifies areas for growth and development.
+                        Our AI analyzes your employees&apos; skills and identifies areas for growth and development.
                       </p>
                     </div>
                   </li>
@@ -271,7 +273,7 @@ export function Landing() {
                     <div className="grid gap-1">
                       <h3 className="text-xl font-bold">Progress Tracking</h3>
                       <p className="text-muted-foreground">
-                        Monitor your employees' progress and provide feedback to support their continuous development.
+                        Monitor your employees&apos; progress and provide feedback to support their continuous development.
                       </p>
                     </div>
                   </li>
@@ -312,7 +314,7 @@ export function Landing() {
   )
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -332,7 +334,7 @@ function MountainIcon(props) {
 }
 
 
-function XIcon(props) {
+function XIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
